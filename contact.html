@@ -1,55 +1,22 @@
 <!doctype html>
-<html lang="es">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Contacto - Voluntad Inquebrantable</title>
-<link rel="stylesheet" href="/assets/styles.css">
-</head>
-<body>
-<header class="header">
-  <img src="/assets/images/logo.png" class="logo" alt="Voluntad Inquebrantable logo">
-  <div>
-    <div class="title">Voluntad Inquebrantable</div>
-    <div class="tagline">Voluntad que no se quiebra</div>
-  </div>
-  <nav class="nav">
-    <a href="/">Inicio</a>
-    <a href="/about.html">Sobre Nosotros</a>
-    <a href="/programs.html">Programas</a>
-    <a href="/contact.html">Contacto</a>
-    <a class="lang-toggle" id="lang-switch" href="/es/">EN</a>
-  </nav>
-</header>
-<main>
-
-<section style="padding:28px;">
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contacto - Voluntad Inquebrantable</title><link rel="stylesheet" href="/assets/styles.css"></head><body>
+<header class="header"><img src="/assets/images/logo.png" class="logo" alt="logo"><div style="min-width:240px;"><div class="title">Voluntad Inquebrantable</div><div class="tagline">Voluntad que no se quiebra</div></div><nav class="nav"><a href="/es/">Inicio</a><a href="/es/about.html">Sobre Nosotros</a><a href="/es/programs.html">Programas</a><a href="/es/contact.html">Contacto</a><a class="lang-toggle" id="lang-switch" href="/">EN</a></nav></header>
+<section class="section">
   <h2>Contacto</h2>
-  <div class="card" style="max-width:760px;margin:0 auto;text-align:left;">
-    <p>Para consultas o interés en voluntariado, envíenos un correo electrónico a <a href="mailto:info@voluntadinq.org">info@voluntadinq.org</a> (placeholder).</p>
-    <p>Si desea visitarnos o enviar materiales: Fresno, CA (dirección disponible a pedido).</p>
+  <div class="contact-form">
+    <form action="https://formsubmit.co/abecerrag03@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://voluntadinq.org/es/thank-you.html">
+      <label for="name">Nombre</label><br>
+      <input type="text" id="name" name="name" required style="width:100%; padding:8px; margin-bottom:8px;"><br>
+      <label for="email">Correo electrónico</label><br>
+      <input type="email" id="email" name="email" required style="width:100%; padding:8px; margin-bottom:8px;"><br>
+      <label for="message">Mensaje</label><br>
+      <textarea id="message" name="message" rows="6" required style="width:100%; padding:8px; margin-bottom:8px;"></textarea><br>
+      <button type="submit" class="cta">Enviar Mensaje</button>
+    </form>
   </div>
 </section>
-
-</main>
-<footer class="footer">
-  &copy; 2025 Voluntad Inquebrantable — Creciendo juntos, prosperando juntos
-</footer>
-<script>
-(function(){
-  try{
-    var userLang = navigator.language || navigator.userLanguage || '';
-    if(userLang.startsWith('es') && !location.pathname.startsWith('/es')){
-      if(location.pathname === '/' || location.pathname === '/index.html') location.href = '/es/';
-      else location.href = '/es' + location.pathname;
-    }
-  }catch(e){}
-})();
-document.getElementById('lang-switch').addEventListener('click', function(e){
-  e.preventDefault();
-  var href = this.getAttribute('href');
-  location.href = href;
-});
-</script>
-</body>
-</html>
+<footer class="footer">&copy; 2025 Voluntad Inquebrantable — Creciendo juntos, prosperando juntos<div class="socials"><a href='#'>Facebook</a><a href='#'>Instagram</a><a href='#'>LinkedIn</a></div></footer>
+<script>document.getElementById('lang-switch').addEventListener('click', function(e){ e.preventDefault(); location.href = this.getAttribute('href'); });</script>
+</body></html>

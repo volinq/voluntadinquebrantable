@@ -1,64 +1,32 @@
 <!doctype html>
 <html lang="es">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Inicio - Voluntad Inquebrantable</title>
-<link rel="stylesheet" href="/assets/styles.css">
-</head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Inicio - Voluntad Inquebrantable</title><link rel="stylesheet" href="/assets/styles.css"></head>
 <body>
 <header class="header">
-  <img src="/assets/images/logo.png" class="logo" alt="Voluntad Inquebrantable logo">
-  <div>
-    <div class="title">Voluntad Inquebrantable</div>
-    <div class="tagline">Voluntad que no se quiebra</div>
-  </div>
+  <img src="/assets/images/logo.png" class="logo" alt="logo">
+  <div style="min-width:240px;"><div class="title">Voluntad Inquebrantable</div><div class="tagline">Voluntad que no se quiebra</div></div>
   <nav class="nav">
-    <a href="/">Inicio</a>
-    <a href="/about.html">Sobre Nosotros</a>
-    <a href="/programs.html">Programas</a>
-    <a href="/contact.html">Contacto</a>
-    <a class="lang-toggle" id="lang-switch" href="/es/">EN</a>
+    <a href="/es/">Inicio</a><a href="/es/about.html">Sobre Nosotros</a><a href="/es/programs.html">Programas</a><a href="/es/contact.html">Contacto</a><a class="lang-toggle" id="lang-switch" href="/">EN</a>
   </nav>
 </header>
-<main>
-
 <section class="hero">
   <div class="left">
     <h1>Voluntad Inquebrantable — Voluntad que no se quiebra</h1>
     <p><strong>Ayudamos a unir a las familias proporcionando educación, recursos y mentoría que empoderan a los padres y jóvenes para crecer juntos, superar barreras y prosperar con resiliencia.</strong></p>
     <p>Creciendo juntos, prosperando juntos.</p>
-    <a class="cta" href="/es/about.html">Conoce Más</a>
+    <p><a class="cta" href="/es/about.html">Sobre Nosotros</a> <a class="cta" href="/es/programs.html" style="background:var(--brand-2); margin-left:8px;">Programas</a> <a class="cta" href="/es/contact.html" style="background:#6b6b6b; margin-left:8px;">Contacto</a></p>
   </div>
-  <div class="right">
-    <img src="/assets/images/family1.svg" alt="Familia diversa" style="max-width:420px; border-radius:12px; box-shadow:0 8px 30px rgba(0,0,0,0.12)">
+  <div class="right"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1600&q=80&auto=format&fit=crop&ixlib=rb-4.0.3&s=0b3b4f8b0c8ed4c5a9f6f5b0b2ad2c9c" alt="Familia diversa" style="max-width:480px; border-radius:12px; box-shadow:0 8px 30px rgba(0,0,0,0.12);"></div>
+</section>
+<section class="section">
+  <div class="grid">
+    <div class="card"><img class="program-img" src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?w=1200&q=80&auto=format&fit=crop&ixlib=rb-4.0.3&s=8a5e6b2b0e6f7f8a9b1c2d3e4f5a6b7c" alt="mentoria"><h3>Mentoría</h3><p>Programas de mentoría individuales y grupales para apoyar a la juventud en educación y carrera.</p></div>
+    <div class="card"><img class="program-img" src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200&q=80&auto=format&fit=crop&ixlib=rb-4.0.3&s=9b6d7c8a5e4f3b2a1c0d9e8f7a6b5c4d" alt="talleres"><h3>Talleres Educativos</h3><p>Talleres y clases para padres y jóvenes, incluyendo ESL y preparación universitaria.</p></div>
+    <div class="card"><img class="program-img" src="https://images.unsplash.com/photo-1542156822-6924d5f6f8b2?w=1200&q=80&auto=format&fit=crop&ixlib=rb-4.0.3&s=1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d" alt="apoyo familiar"><h3>Apoyo Familiar</h3><p>Recursos, referencias y apoyo comunitario para ayudar a las familias a navegar servicios.</p></div>
+    <div class="card"><img class="program-img" src="https://images.unsplash.com/photo-1534081333815-ae5019106622?w=1200&q=80&auto=format&fit=crop&ixlib=rb-4.0.3&s=2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e" alt="grupo de chicas"><h3>Grupo de Mujeres Jóvenes</h3><p>Espacio seguro y empoderador para que las jóvenes desarrollen liderazgo y resiliencia.</p></div>
   </div>
 </section>
-<section class="grid" aria-label="Destacados">
-  <div class="card"><h3>Mentoría</h3><p>Programas de mentoría personalizados para jóvenes — apoyo educativo y guía profesional.</p></div>
-  <div class="card"><h3>Apoyo Familiar</h3><p>Recursos y talleres para ayudar a las familias inmigrantes a navegar servicios y fortalecer vínculos.</p></div>
-  <div class="card"><h3>Empoderamiento Juvenil</h3><p>Liderazgo y oportunidades comunitarias que construyen confianza y resiliencia.</p></div>
-</section>
-
-</main>
-<footer class="footer">
-  &copy; 2025 Voluntad Inquebrantable — Creciendo juntos, prosperando juntos
-</footer>
-<script>
-(function(){
-  try{
-    var userLang = navigator.language || navigator.userLanguage || '';
-    if(userLang.startsWith('es') && !location.pathname.startsWith('/es')){
-      if(location.pathname === '/' || location.pathname === '/index.html') location.href = '/es/';
-      else location.href = '/es' + location.pathname;
-    }
-  }catch(e){}
-})();
-document.getElementById('lang-switch').addEventListener('click', function(e){
-  e.preventDefault();
-  var href = this.getAttribute('href');
-  location.href = href;
-});
-</script>
+<footer class="footer">&copy; 2025 Voluntad Inquebrantable — Creciendo juntos, prosperando juntos<div class="socials"><a href='#'>Facebook</a><a href='#'>Instagram</a><a href='#'>LinkedIn</a></div></footer>
+<script>document.getElementById('lang-switch').addEventListener('click', function(e){ e.preventDefault(); location.href = this.getAttribute('href'); });</script>
 </body>
 </html>
